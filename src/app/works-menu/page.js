@@ -27,6 +27,7 @@ export default function Home(props) {
           Hey hey <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <ul>
+            {console.log(props.actions)}  
           {props.works.map(work=>{
             return(
               <li><strong>{work.assignedTo[0]}:</strong> {work.linkText}</li>
